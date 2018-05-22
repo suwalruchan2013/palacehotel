@@ -1,0 +1,75 @@
+/*===================================================
+Global Style Sheet 
+Author: Aryan Twanju ~ (surfaryan@gmail.com)	
+website: http://www.riseofaryan.com/
+Site Type: Personal Portoflio
+===================================================*/
+
+
+
+body {
+	background:#f6f6f6 !important;
+	color: #000000;
+	font: normal 13px/22px Arial, Helvetica, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+a {
+	color: #FFF;
+	text-decoration: none !important;
+	}
+	
+	a:hover {
+		text-decoration:underline;
+		}
+
+img {
+	display: inline-block;
+	border:0;
+	}
+
+ul li {
+	list-style:none !important;
+	margin:0;
+	padding:0;
+	}
+
+
+/* slightly enhanced, universal clearfix hack */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+
+.clearfix {
+	display: inline-block;
+	}
+
+/* start commented backslash hack \*/
+* html .clearfix{
+	height:1%;
+	}
+.clearfix{
+	display:block;
+	}
+/* stop commented backslash hack */
+
+.clear{
+	clear:both;
+	}
+
+.clear-left {
+	clear:left;
+	}
+
+.float-right {
+	float:right;
+	}

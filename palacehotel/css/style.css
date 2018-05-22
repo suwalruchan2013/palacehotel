@@ -1,0 +1,640 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'gotham_mediumregular';
+    src: url('../fonts/gotham-medium.eot');
+    src: url('../fonts/gotham-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-medium.woff2') format('woff2'),
+         url('../fonts/gotham-medium.woff') format('woff'),
+         url('../fonts/gotham-medium.ttf') format('truetype'),
+         url('../fonts/gotham-medium.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../fonts/proximanova-reg-webfont.eot');
+    src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-reg-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-reg-webfont.woff') format('woff'),
+         url('../fonts/proximanova-reg-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-reg-webfont.svg#proxima_novaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'signikaregular';
+    src: url('../fonts/signika-regular.eot');
+    src: url('../fonts/signika-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/signika-regular.woff2') format('woff2'),
+         url('../fonts/signika-regular.woff') format('woff'),
+         url('../fonts/signika-regular.ttf') format('truetype'),
+         url('../fonts/signika-regular.svg#signikaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*------------header menu----------------*/
+.header .navbar 
+{
+	height:70px;
+	border-radius:10px;
+	border-top-right-radius:0px;
+	border-top-left-radius:0px;
+	
+}
+	.header .navbar .navbar-brand
+	{
+		width:250px;
+	}
+	.header .navbar .navbar-brand img
+	{
+		margin-top:-10px;
+		width:200px;
+	}
+	.header .navbar-collapse
+	{
+		float:right;
+	}
+	.header .navbar-collapse ul li a
+	{
+		padding:24px 20px;
+		color:#fff !important;
+		font-size:15px;
+		font-family: 'signikaregular', Arial, sans-serif;
+	}
+	.header .navbar-collapse ul li.active a,
+	.header .navbar-collapse ul li:hover a
+	{
+		background: -webkit-linear-gradient(#c2000f, #690005); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#c2000f, #690005); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#c2000f, #690005); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#c2000f, #690005); /* Standard syntax */
+	}
+	
+/*------------sub menu----------------*/
+.sub-menu .navbar
+{
+	background: -webkit-linear-gradient(#c10016, #6b0006); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#c10016, #6b0006); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#c10016, #6b0006); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#c10016, #6b0006); /* Standard syntax */
+	border:none;
+	border-radius:0;
+	margin-bottom:0px;
+}
+.sub-menu ul li a
+{
+	text-transform:uppercase ;
+	color:#fff !important;
+}
+	.sub-menu .navbar-collapse ul li.active a
+	{
+		background:none;
+	}
+	.sub-menu .navbar-collapse ul
+	{
+		margin-left:3%;
+	}
+	.sub-menu .navbar-collapse ul li
+	{
+		border-right:1px solid #fff;
+	}
+	.sub-menu .navbar-collapse ul li:last-child
+	{
+		border-right:none;
+	}
+	.sub-menu .navbar-collapse ul li:hover
+	{
+		background: -webkit-linear-gradient(#858df6, #070e69); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#858df6, #070e69); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#858df6, #070e69); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#858df6, #070e69); /* Standard syntax */
+	}
+	
+/*--------content start-------------*/
+.slider
+{
+	width:100%;
+}
+.slider-wrapper
+{
+}
+.slider .slider-wrapper img
+{
+	max-height:350px;
+}
+/*---slider----*/
+.slider img
+{
+	width:100%;
+	
+}
+
+/*------book section-------*/
+.book-section
+{
+	background:#FFF;
+	width:100%;
+	margin-left:0px;
+	padding:25px 10px;
+}
+	.book-section .check-option
+	{
+		margin-bottom:25px;
+	}
+
+	/*.book-section .check-in,
+	.book-section .check-out
+	{
+		float:left;
+	}*/
+
+	.book-section .label,
+	.age-section .label
+	{
+		color:#5a656a;
+		font-size:12px;
+	}
+	.book-section .label span,
+	.age-section .label span
+	{
+		color:#F00;
+	}
+	.book-section .input-section
+	{
+	}
+		.book-section .input-section input
+		{
+			width:100%;
+			background:#fbfbfb;
+			height:30px;
+			padding:0px 3px;
+			border:1px solid #ededed;
+			box-shadow:3px 3px 3px #ededed inset;
+		}
+	.room-option
+	{
+		border-bottom:1px dashed #d1d1d1;
+		padding:0px 15px;
+	}
+	.room-option .option-block 
+	{
+		margin-bottom:15px;
+		color:#5a656a;
+		font-weight:bold;
+	}
+	.room-option .option-block input
+	{
+		margin-top:-3px;
+		margin-right:5px;
+	}
+	.age-section
+	{
+		margin-top:15px;
+	}
+	.age-section select
+	{
+		width:100%;
+		margin-left:7px;
+		background:#fbfbfb;
+		border:1px solid #ededed;
+		box-shadow:3px 3px 3px #ededed inset;
+	}
+	.book-button
+	{
+		text-align:center;
+	}
+		.book-button button
+		{
+			margin-top:40px;
+			width:90%;
+			padding:15px 0px;
+			background: -webkit-linear-gradient(#c2000f, #6a0006); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(#c2000f, #6a0006); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(#c2000f, #6a0006); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(#c2000f, #6a0006); /* Standard syntax */
+			border:none;
+			color:#fff;
+			font-weight:bold;
+			font-size:20px;
+			border-radius:5px;
+		}
+		.book-button button:hover
+		{
+			background: -webkit-linear-gradient(#6a0006, #c2000f); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(#6a0006, #c2000f); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(#6a0006, #c2000f); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(#6a0006, #c2000f); /* Standard syntax */
+			cursor:pointer;
+		}
+		
+/*---------tab section---------*/
+.tab-section .nav-tabs
+{
+	margin-top:5px;
+}
+	.tab-section .nav-tabs li
+	{
+		background: -webkit-linear-gradient(#c2000f, #6a0006); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#c2000f, #6a0006); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#c2000f, #6a0006); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#c2000f, #6a0006); /* Standard syntax */
+		margin-right:2px;
+		border-top-left-radius:5px;
+		border-top-right-radius:5px;
+	}
+	.tab-section .nav-tabs li a
+	{
+		color:#fff;
+		font-family: 'gotham_mediumregular', Arial, sans-serif;
+	}
+	.tab-section .nav-tabs li.active,
+	.tab-section .nav-tabs li:hover
+	
+	{
+		background: -webkit-linear-gradient(#e3e2e2, #fbfafa) !important; /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#e3e2e2, #fbfafa) !important; /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#e3e2e2, #fbfafa) !important; /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#e3e2e2, #fbfafa) !important; /* Standard syntax */
+	}
+	.tab-section .nav-tabs li.active a,
+	.tab-section .nav-tabs li:hover a
+	{
+		color:#373e41;
+		background: -webkit-linear-gradient(#e3e2e2, #fbfafa) !important; /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#e3e2e2, #fbfafa) !important; /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#e3e2e2, #fbfafa) !important; /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#e3e2e2, #fbfafa) !important; /* Standard syntax */
+	}
+	.logo-section
+	{
+		height:160px;
+		width:100%;
+		background:#fff;
+		text-align:center;
+	}
+	.logo-section.book img
+	{
+		margin-top:50px;
+	}
+	.logo-section.partner
+	{
+		background:#4c8a37;
+	}
+	.logo-section.partner img
+	{
+		width:auto;
+		height:100%;
+		margin-top:0px;
+	}
+	
+	/*----------tab content-----------*/
+	.tab-content
+	{
+		background:#fff;
+		color:#666;
+		padding:40px 30px;
+		border:1px solid #E9E9E9;
+	}
+	.tab-content .title
+	{
+		color:#5a656a;
+		font-weight:bold;
+		margin-bottom:25px;
+	}
+	.list-option
+	{
+		
+		margin-bottom:20px;
+	}
+		.list-option ul
+		{
+			padding-left:10px;
+		}
+		.list-option ul li
+		{
+			margin-bottom:12px;
+			list-style-image:url(../images/arrow.png) !important;
+			transition:all 0.5s ease;
+		}
+		.list-option ul li a
+		{
+			color:#666;
+			font-family: 'proxima_novaregular', Arial, sans-serif;
+			transition:all 0.5s ease;
+		}
+			.list-option ul li:hover
+			{
+				list-style-image:url(../images/red-arrrow.png) !important;
+			}
+			.list-option ul li a:hover
+			{
+				color:#950000;
+				text-decoration:underline !important;
+			}
+			
+/*-------------feature slider------------------*/
+.feature-slider 
+{
+	padding:0px;
+	margin-top:10px;
+}
+
+.feature-slider img
+{
+	width:100%;
+}
+
+/*-------------footer section------------------*/
+.footer
+{
+	background: -webkit-linear-gradient(#c20009, #63010a) !important; /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#c20009, #63010a) !important; /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#c20009, #63010a) !important; /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#c20009, #63010a) !important; /* Standard syntax */
+	padding-top:30px;
+	color:#fff;
+}
+	.footer .company-logo img
+	{
+		width:70%;
+	}
+	.footer .company-desc
+	{
+		margin-top:15px;
+	}
+	.footer .block
+	{
+		margin-bottom:40px;
+	}
+	.footer .copyright p
+	{
+		vertical-align:bottom;
+		margin-top:5px;
+	}
+	.footer .block ul
+	{
+		margin-top:15px;
+		padding-right:20px;
+	}
+	.footer .block ul li
+	{
+		border-bottom:1px solid #f4d2d6;
+		padding:10px 0px;
+		
+	}
+	.footer .block ul li a
+	{
+		color:#f4d2d6;
+		transition:all 0.5s ease;
+		font-family: 'gotham_mediumregular', Arial, sans-serif;
+	}
+	.footer .block ul li:hover a
+	{
+		padding-left:10px;
+		color:#FFC;
+	}
+	.footer .block.contact-info h2
+	{
+		font-size:25px;
+	}
+	.footer .block.contact-info p
+	{
+		text-align:right;
+		margin-right:22%;
+	}
+	.contact-number
+	{
+		border-bottom:1px solid #f4d2d6;
+		padding-bottom:5px;
+	}
+	.enquiry-box
+	{
+		margin-top:20px;
+	}
+		.enquiry-box input,
+		.enquiry-box a
+		{
+			background:#272727;
+			border:1px solid #474747;
+			padding:0px 5px;
+		}
+		
+		.enquiry-box .input-group
+		{
+			margin-top:10px;
+		}
+
+/*----------------footer menu---------------*/
+.footer-menu 
+{
+	text-align:right;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	padding-top:10px;
+}
+.footer-menu ul li
+{
+	display:inline;
+	padding:10px 10px;
+}
+	.footer-menu ul li a
+	{
+		color:#fff;
+	}
+	.footer-menu ul li a:hover
+	{
+		text-decoration:underline !important;
+		color:#FF9;
+	}
+
+/*------------booking form page-------------*/
+.booking
+{
+	margin-top:40px;
+}
+.form-title
+{
+	border-bottom:1px solid #666;
+}
+.form-title h2
+{
+	text-transform:uppercase;
+}
+.booking .note
+{
+	margin-top:20px;
+}
+.booking form
+{
+	margin-top:60px;
+}
+.booking form .form-section
+{
+	margin-bottom:30px;
+}
+.booking form input
+{
+	width:100%;
+	background:#FFF;
+	height:40px;
+	color:#999;
+	padding-left:10px;
+	border:1px solid #ededed;
+	box-shadow:3px 3px 3px #ededed inset;
+	transition:all 0.5s ease;
+}	
+	.booking form input:hover,
+	.booking form input:focus
+	{
+		box-shadow:3px 3px 3px #FFE1E1 inset;
+		color:#333;
+	}
+	.booking .right .select-section
+	{
+		margin-bottom:30px;
+	}
+	.booking form .right select
+	{
+		width:100%;
+		height:40px;
+		padding-left:10px;
+		color:#999;
+	}
+	.booking form .right select option
+	{
+		padding-left:10px;
+	}
+	.booking form .book-btn
+	{
+		text-align:right;
+		margin-right:15px;
+		margin-bottom:30px;
+		margin-top:40px;
+	}
+	.booking form .book-btn button
+	{
+		padding:15px 30px;
+		background: -webkit-linear-gradient(#c2000f, #6a0006); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#c2000f, #6a0006); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#c2000f, #6a0006); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#c2000f, #6a0006); /* Standard syntax */
+		border:none;
+		color:#fff;
+		font-weight:bold;
+		font-size:20px;
+		border-radius:5px;
+	}
+	.booking form .book-btn button:hover
+		{
+			background: -webkit-linear-gradient(#6a0006, #c2000f); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(#6a0006, #c2000f); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(#6a0006, #c2000f); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(#6a0006, #c2000f); /* Standard syntax */
+			cursor:pointer;
+		}
+		
+	.book-address
+	{
+		background:#fff;
+		padding:10px;
+	}
+	.book-address h4
+	{
+		text-transform:uppercase;
+		font-size:20px;
+		color:#AE0000;
+		font-weight:bold;
+	}
+	.book-address ul li
+	{
+		padding-bottom:5px;
+		margin-bottom:5px;
+		border-bottom:1px dotted #999;
+	}
+	.book-address ul li span
+	{
+		margin-right:10px;
+	}
+	.google-map
+	{
+		margin:20px 0px;
+	}
+/*----------------single room page---------------	*/
+.tab-content .check-status
+{
+	margin-top:30px;
+}
+.tab-content .check-status > a
+{
+	padding:10px 20px;
+	border:none;
+	background: -webkit-linear-gradient(#007D00, #004000); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#007D00, #004000); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#007D00, #004000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#007D00, #004000); /* Standard syntax */
+	border-radius:5px;
+	color:#fff;
+	transition:all 0.5s ease;
+}
+	.tab-content .check-status >a:hover
+	{
+		background: -webkit-linear-gradient(#c2000f, #6a0006); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#c2000f, #6a0006); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#c2000f, #6a0006); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#c2000f, #6a0006); /* Standard syntax */
+		cursor:pointer;
+	}
+	.tab-content .list-option li span
+	{
+		margin-left:5px;
+	}
+	.input-group .form-control
+	{
+		color:#6F9 !important;
+	}
+	.input-group-btn button
+	{
+		text-transform:uppercase;
+		font-weight:bold;
+	}
+	.input-group-btn button:hover
+	{
+		background:#999;
+		color:#fff;
+	}
+	
+/*------------price list page----------------*/
+.price-list
+{
+	margin-top:30px;
+	padding:0px;
+}
+
+	.price-list .col-md-6,
+	.price-list .col-md-3
+	{
+		padding:0px;
+		border:1px solid #ccc;
+	}
+	.price-list .cat-title
+	{
+		background:#6b0006;
+		color:#fff;
+		font-weight:bold;
+		font-size:18px;
+		padding:5px 10px;
+	}
+	.price-list .room-type
+	{
+	}
+	.price-list .list-type
+	{
+		border-bottom:2px solid #ccc;
+		background:#fff;
+		padding:5px 10px;
+	}
